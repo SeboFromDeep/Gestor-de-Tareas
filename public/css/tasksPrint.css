@@ -1,0 +1,54 @@
+header,
+.card-body button,
+.tasks-buttons {
+    display: none;
+}
+
+body {
+    font-family: Helvetica;
+}
+
+.print-header {
+    font-size: 18px;
+}
+
+.card {
+    margin: 0;
+    border: none;
+    display: list-item;
+    font-size: 12px;
+}
+
+.card-body {
+    display: flex;
+}
+
+
+.card-body > * {
+    margin-right: 0.5rem;
+}
+
+.task-name {
+    font-weight: bold;
+}
+
+.unfinished-task .task-name::after {
+    content: ": ";
+}
+
+.finished-task {
+    left: 2rem;
+    text-decoration: line-through;
+}
+
+.tags {
+    display: flex;
+}
+
+.tags *::before {
+    content: "(";
+}
+
+.tags *::after {
+    content: ")";
+}

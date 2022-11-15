@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/taskScreen.css" media="screen">
+    <link rel="stylesheet" href="css/tasksPrint.css" media="print">
+    <title>Gestor de Tareas</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/logo.png" alt="Gestor de Tareas"> 
+        <div class="user">
+            <img class="user-icon" src="img/noUser.png" alt="">
+            <div class="user-info">
+                <p>Nombre Usuario</p>
+                <button class="btn btn-outline-light" type="logout">Desconectar</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <p class="print-header">Tareas</p>
+        <div class="row justify-content-center tasks-container">
+            <div class="col-sm-8 card unfinished-task">
+                <div class="card-body">
+                    <p class="task-name">Preparar Prácticas AW</p>
+                    <div class="tags">
+                        <p>Universidad</p>
+                        <p>AW</p>
+                    </div>
+                    <button class="btn btn-outline-danger">Finalizar</button>
+                </div>
+            </div>
+
+            <div class="col-sm-8 card finished-task">
+                <div class="card-body">
+                    <p class="task-name">Mirar fechas del congreso</p>
+                </div>
+            </div>
+
+            <div class="col-sm-8 card unfinished-task">
+                <div class="card-body">
+                    <p class="task-name">Ir al supermercado</p>
+                    <div class="tags">
+                        <p>Personal</p>
+                        <p>Básicos</p>
+                    </div>
+                    <button class="btn btn-outline-danger">Finalizar</button>
+                </div>
+            </div>
+
+            <div class="col-sm-8 card unfinished-task">
+                <div class="card-body">
+                    <p class="task-name">Jugar al fútbol</p>
+                    <div class="tags">
+                        <p>Personal</p>
+                        <p>Deporte</p>
+                    </div>
+                    <button class="btn btn-outline-danger">Finalizar</button>
+                </div>
+            </div>
+
+            <div class="col-sm-8 card unfinished-task">
+                <div class="card-body">
+                    <p class="task-name">Hablar con profesor</p>
+                    <div class="tags">
+                        <p>Universidad</p>
+                        <p>TP2</p>
+                    </div>
+                    <button class="btn btn-outline-danger">Finalizar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="tasks-buttons">
+            <button class="btn btn-danger">Eliminar Tareas</button>
+            <button class="btn btn-success">Añadir Tarea</button>
+        </div>
+    <main>
+</body>
+</html>
